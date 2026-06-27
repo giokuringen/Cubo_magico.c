@@ -39,6 +39,11 @@ void ler_cubo(char *nome_arquivo, int cubo[6][3][3]){
     }
 
     if (qtd_cores == 3){
+      if (!linha_possivel(cores[0], cores[1],cores[2])){
+        printf("Erro, cor inválida na face %d, linha %d\n", face, linha_face);
+        fclose(arquivo);
+        return; 
+      }
       for(int j = 0; j < 3; j++){
         cubo[face][linha_face][j] = cores[j];
       }
