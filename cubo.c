@@ -151,6 +151,10 @@ void girar_tras_antihorario(int cubo[6][3][3]){
 
 /* Rascunho da rotação */
 void rotacionar_face(int cubo[6][3][3], enum Face face, enum Direcao sentido) {
+  if (!face_possivel((int)face) || !direcao_possivel((int)sentido)) {
+    printf("Erro, face ou direção inválida\n");
+    return;
+  }
   if (sentido == HORARIO){
     switch(face) {
       case CIMA: girar_cima_horario(cubo); break;
