@@ -18,6 +18,7 @@ void ler_cubo(char *nome_arquivo, int cubo[6][3][3]);
 void rotacionar_matriz_face(int face[3][3]);
 
 
+void copiar_cubo(int origem[6][3][3], int destino[6][3][3]);
 void resolve_cubo(int cubo[6][3][3]);
 int resolver_bfs(int cubo[6][3][3]);
 void resolve_cubo_bfs(int cubo[6][3][3]);
