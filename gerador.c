@@ -20,7 +20,6 @@ void salvar_arquivo(int cubo[6][3][3], const char *nome_arquivo) {
       }
       fprintf(arquivo, "\n");
     }
-    fprintf(arquivo,"\n");
   }
   fclose(arquivo);
 }
