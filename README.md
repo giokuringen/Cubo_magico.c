@@ -1,24 +1,59 @@
-Trabalho Final - Resolvedor de Cubo Mágico em C
-Nomes: Diovana Freita, Felipe de Alvarenga, Giovana Van Kuringen e João Marcelo Pacheco.
+## Trabalho Final - Resolvedor de Cubo Mágico em C
+Pontifícia Universidade Católica do Rio Grande do Sul — PUCRS
 
-Compilação
+**Integrantes:**
+- Diovana Freita
+- Felipe de Alvarenga
+- Giovana Van Kuringen
+- João Marcelo Pacheco
 
-Programa principal -> make compile 
-Gerador -> gcc -o build/gerador gerador.c cubo.c -Wall -I.
+---
 
+## Descrição
 
-Estrutura do projeto
+Programa em C capaz de ler uma instância de um Cubo Mágico a partir de um arquivo texto, armazená-la em memória e encontrar uma sequência de rotações que leve o cubo ao estado resolvido.
 
-├── main.c       — Programa principal
-├── cubo.c       — Funções do programa
-├── cubo.h       — Enums, structs e declarações
-├── arquivo.c    — Leitura e Interpretação do arquivo de entrada
-├── gerador.c    — Gerador de cubos aleatórios
-├── Makefile     — Compilação
-└── arquivo.txt  — Exemplo de cubo já resolvido
+---
 
-Guia de uso
+## Estrutura do Projeto
 
-Programa principal -> ./build/run <arquivo>
+```
+main.c        — Programa principal
+cubo.c        — Funções do cubo (rotações, verificação, solução)
+cubo.h        — Enums, structs e declarações
+arquivo.c     — Leitura e interpretação do arquivo de entrada
+gerador.c     — Gerador de cubos aleatórios
+Makefile      — Automação da compilação
+arquivo.txt   — Exemplo de cubo já resolvido
+```
 
-Gerador -> ./build/gerador <número de cubos>
+---
+
+## Compilação
+
+**Programa principal:**
+```bash
+make compile
+```
+
+**Gerador de cubos aleatórios:**
+```bash
+gcc -o build/gerador gerador.c cubo.c -Wall -I.
+```
+
+---
+
+## Como Usar
+
+**Programa principal:**
+```bash
+./build/run <arquivo>
+```
+
+**Gerador de cubos aleatórios:**
+```bash
+./build/gerador <número de cubos>
+```
+O gerador criará n arquivos de texto com descrições aleatórias de cubos.
+
+---
