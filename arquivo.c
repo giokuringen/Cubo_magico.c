@@ -8,7 +8,10 @@ void ler_cubo(char *nome_arquivo, int cubo[6][3][3]){
   FILE *arquivo;
   arquivo = fopen(nome_arquivo, "r");
 
-  if (!arquivo) { return; }
+  if (!arquivo) { 
+    printf("Erro, não foi possível abrir o arquivo '%s'\n", nome_arquivo);
+    return;
+    }
 
   char linha[256];
   int face = 0;
