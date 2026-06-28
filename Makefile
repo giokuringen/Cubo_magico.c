@@ -1,7 +1,7 @@
 EXE_NAME = run
 #LIB_NAME = calc.a
 
-SOURCES= main.c cubo.c arquivo.c gerador.c
+SOURCES= main.c cubo.c arquivo.c 
 #SOURCES_LIB=calculadora.c
 FLAGS=-Wall -Werror -I. -fsanitize=leak
 BUILD_DIR=build
