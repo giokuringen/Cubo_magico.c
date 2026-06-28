@@ -2,7 +2,7 @@
 Pontifícia Universidade Católica do Rio Grande do Sul — PUCRS
 
 **Integrantes:**
-- Diovana Freita
+- Diovana Freitas
 - Felipe de Alvarenga
 - Giovana Van Kuringen
 - João Marcelo Pacheco
