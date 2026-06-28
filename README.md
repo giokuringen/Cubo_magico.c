@@ -25,6 +25,7 @@ arquivo.c     — Leitura e interpretação do arquivo de entrada
 gerador.c     — Gerador de cubos aleatórios
 Makefile      — Automação da compilação
 arquivo.txt   — Exemplo de cubo já resolvido
+interface.c   — Interface do cubo
 ```
 
 ---
