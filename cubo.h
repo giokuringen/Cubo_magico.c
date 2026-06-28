@@ -15,7 +15,7 @@ void imprime_cubo(int cubo[6][3][3]);
 void imprime_face(int cubo[6][3][3], enum Face f);
 void rotacionar_face(int cubo[6][3][3], enum Face face, enum Direcao sentido);
 void ler_cubo(char *nome_arquivo, int cubo[6][3][3]);
-void rotacionar_matriz_face(int face[3][3]);
+
 
 
 void copiar_cubo(int origem[6][3][3], int destino[6][3][3]);
