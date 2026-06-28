@@ -41,6 +41,10 @@ make compile
 gcc -o build/gerador gerador.c cubo.c -Wall -I.
 ```
 
+**Interface.c:**
+```bash
+make conmpile_interface
+```
 ---
 
 ## Como Usar
@@ -55,5 +59,10 @@ gcc -o build/gerador gerador.c cubo.c -Wall -I.
 ./build/gerador <número de cubos>
 ```
 O gerador criará n arquivos de texto com descrições aleatórias de cubos.
+
+**Interface:**
+```bash
+./build/run_interface <arquivo.txt>
+```
 
 ---
