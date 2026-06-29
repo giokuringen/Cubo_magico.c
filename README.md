@@ -37,9 +37,14 @@ interface.c   — Interface do cubo
 make compile
 ```
 
+**Compilação geral:**
+```bash
+make all
+```
+
 **Gerador de cubos aleatórios:**
 ```bash
-gcc -o build/gerador gerador.c cubo.c -Wall -I.
+make compile_gerador
 ```
 
 **Interface:**
