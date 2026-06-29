@@ -42,7 +42,7 @@ make compile
 gcc -o build/gerador gerador.c cubo.c -Wall -I.
 ```
 
-**Interface.c:**
+**Interface:**
 ```bash
 make conmpile_interface
 ```
